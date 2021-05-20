@@ -1,0 +1,63 @@
+html, body, main{
+  box-sizing: border-box;
+  display: flex;
+  flex: auto;
+}
+
+html, body {
+  background: #6D6875;
+  flex: auto;
+  box-sizing: content-box;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  align-items: center;
+}
+
+h1 {
+  color: #ffb4a2;
+  font-size: 3em;
+}
+
+main {
+  color: azure;
+  flex-grow: 1;
+  flex-direction: row;
+  height: 300px;
+  border: #6D6875;
+  align-items: stretch;
+
+}
+
+.flex-item-1 {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  line-height: 2;
+  align-self: center;
+}
+
+.flex-item-2 {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  line-height: 2;
+  align-self: center;
+}
+
+.button-column-rows {
+  justify-content: center;
+  line-height: 1.5;
+  padding: 5px;
+  margin: 10px;
+  display: grid;
+  vertical-align: middle;
+}
+
+.button {
+  color: gray;
+}
