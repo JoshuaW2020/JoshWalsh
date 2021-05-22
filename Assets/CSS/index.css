@@ -5,7 +5,7 @@ html, body, main{
 }
 
 html, body {
-  background: #6D6875;
+  background: #212529;
   flex: auto;
   box-sizing: content-box;
   height: 100vh;
@@ -18,19 +18,26 @@ body {
   align-items: center;
 }
 
-h1 {
+.headerbtn {
   color: #ffb4a2;
-  font-size: 3em;
+  font-size: 4em;
+  background: #212529;
+  border: none;
+  cursor: pointer;
+  height: fit-content;
+  align-self: center;
+}
+
+.headerbtn:hover, .headerbtn:focus {
+  text-decoration: underline;
 }
 
 main {
   color: azure;
-  flex-grow: 1;
   flex-direction: row;
-  height: 300px;
+  height: 200px;
   border: #6D6875;
   align-items: stretch;
-
 }
 
 .flex-item-1 {
@@ -39,25 +46,40 @@ main {
   justify-content: flex-end;
   line-height: 2;
   align-self: center;
+  height: 160px;
 }
 
 .flex-item-2 {
   display: flex;
   flex: 1;
+  flex-direction: column;
   justify-content: flex-start;
   line-height: 2;
   align-self: center;
+  padding-left: 10px;
+  height: 160px;
 }
 
-.button-column-rows {
-  justify-content: center;
+.button-vertical-rows {
+  display: none;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #212529;
   line-height: 1.5;
-  padding: 5px;
-  margin: 10px;
-  display: grid;
-  vertical-align: middle;
 }
 
 .button {
-  color: gray;
+  color: #e5989b;
+  width: fit-content;
+  text-decoration: none;
+  font-size: 1.8em;
+  display: flex;
+  flex-direction: column;
 }
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.show {display: flex;}
